@@ -1,0 +1,42 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: shopfron
+  labels:
+    app: shopfron
+spec:
+  type: NodePort
+  selector:
+    app: shopfron
+  ports:
+  - protocol: TCP
+    port: 8010
+    name: http
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shopfron
+spec:
+  selector:
+    matchLabels:
+      app: shopfron
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: shopfron
+    spec:
+      containers:
+      - name: shopfron
+        image: neke904/shopfron:latest
+        ports:
+        - containerPort: 8010
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8010
+          initialDelaySeconds: 30
+          timeoutSeconds: 1

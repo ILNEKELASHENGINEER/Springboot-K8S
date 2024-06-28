@@ -1,0 +1,7 @@
+D:\Devops-Learning\SB-K8s\stockmanager\src\main\java\uk\co\danielbryant\djshopping\stockmanager\resources\StockResource.java
+D:\Devops-Learning\SB-K8s\stockmanager\src\main\java\uk\co\danielbryant\djshopping\stockmanager\model\Stock.java
+D:\Devops-Learning\SB-K8s\stockmanager\src\main\java\uk\co\danielbryant\djshopping\stockmanager\services\StockService.java
+D:\Devops-Learning\SB-K8s\stockmanager\src\main\java\uk\co\danielbryant\djshopping\stockmanager\config\DataGenerator.java
+D:\Devops-Learning\SB-K8s\stockmanager\src\main\java\uk\co\danielbryant\djshopping\stockmanager\exceptions\StockNotFoundException.java
+D:\Devops-Learning\SB-K8s\stockmanager\src\main\java\uk\co\danielbryant\djshopping\stockmanager\repositories\StockRepository.java
+D:\Devops-Learning\SB-K8s\stockmanager\src\main\java\uk\co\danielbryant\djshopping\stockmanager\StockManagerApplication.java
